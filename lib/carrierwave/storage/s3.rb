@@ -195,7 +195,7 @@ module CarrierWave
       end
 
       def connection
-        @connection ||= Aws::S3Interface.new(
+        @connection = Aws::S3Interface.new(
           uploader.s3_access_key_id, uploader.s3_secret_access_key,
           :multi_thread => uploader.s3_multi_thread
         )

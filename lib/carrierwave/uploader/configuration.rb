@@ -14,6 +14,7 @@ module CarrierWave
         add_config :s3_cnamed
         add_config :s3_headers
         add_config :s3_multi_thread
+        add_config :s3_region
         add_config :cloud_files_username
         add_config :cloud_files_api_key
         add_config :cloud_files_container
@@ -34,7 +35,7 @@ module CarrierWave
         add_config :validate_integrity
         add_config :validate_processing
         add_config :mount_on
-        
+
         configure do |config|
           config.permissions = 0644
           config.storage_engines = {

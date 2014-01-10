@@ -206,7 +206,7 @@ module CarrierWave
           :aws_access_key_id      => uploader.s3_access_key_id,
           :aws_secret_access_key  => uploader.s3_secret_access_key,
           :provider               => 'AWS',
-          :region                 => "us-west-2" #uploader.s3_region
+          :region                 => uploader.s3_region
         )
       end
 
